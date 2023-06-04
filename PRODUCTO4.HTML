@@ -1,0 +1,149 @@
+<!--PRODUCTO4.html DISEÑO DE PAGINA PRODUCTO 
+VEREMOS UN EFECTO ZOOM O LUPA-->
+<html>
+    <!DOCTYPE html>
+    <html lang="es">
+    
+    <head>
+       <Title>PRODUCTO 4</Title>      
+       <Meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="PRODUCTO4.CSS">         
+
+    </head>
+    
+    <body>
+        
+        <!--Definimos la imagen a usar y la creamos en dos tamaños distintos-->
+        <img name="nor" class="img1" src="Imagenes/fotosillon1.jpg" width="400">
+        <img name="big" class="img2" src="Imagenes/fotosillon1.jpg" width="800">
+    
+        <!--Definimos una tabla1 de 1 fila por 2 columnas para las fotosy logos-->
+        <table id="tabla1">
+            <tr>
+                <td>                
+            
+                <!--Programamos nuestro codigo JavaScript-->
+                <script type="text/javascript">
+        
+                    document.onmousemove=mifuncion;  /*El evento mouseover se produce cuando el cursor del
+                                                mouse aparece sobre un elemento y mouseout cuando se va.
+                                                aqui llamamos a la función "mifuncion" cuando hacercamos
+                                                el mouse a la imagen */
+                    function mifuncion(ver) {
+                        var x,y,x1,x2,y1,y2;
+                        fact=800/400; /*Permite dividir la imagen de acuerdo a la pixelación dada en la imagen    */
+                        opp=100; /*Definimos esta variable opp Si lo aumentamos aumenta el cuadro del zoom    */
+        
+                        if (ver==null) e=window.event;
+                        x=ver.clientX;
+                        y=ver.clientY;
+        
+                        x1=-opp+(x)*fact;
+                        y1=-opp+(y)*fact; 
+                        x2=+opp+(x)*fact; 
+                        y2=+opp+(y)*fact; 
+        
+                        document.images.big.style.display="inline";
+                        document.images.big.style.left=(x)*(1-fact);
+                        document.images.big.style.top=(y)*(1-fact);
+                        document.images.big.style.clip="rect("+y1+"px,"+x2+"px,"+y2+"px,"+x1+"px)";
+                    }
+                </script>
+
+                </td>      
+
+            
+                <td>
+                    <img src="Fotos/nuevoproducto.png" width=350  height=100  </A>
+                    <br>                   
+                    <h2>Home Collection</h2>                    
+                    <h2>Sillón Modelo Ejecutivo</h2>                
+                    <h2>PRECIO OFERTA : $ 39.900</h2>
+                    <br>                  
+                    <lu>                       
+                    
+                        <li>Material: Metal/Madera/Pu</li>
+                        <li>Garantía: 3 Años</li>
+                        <li>Material Estructura: Madera/Metal</li>
+                        <li>Alto: 124 Cm</li>
+                        <li>Largo: 51 Cm</li>
+                        <li>Profundidad: 51 Cm</li>                        
+                    </lu>                   
+                </td>
+            </tr>
+        </table>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <!--dibujamos un linea-->
+        <table width="100%" border="1" bordercolor="#0000FF" ></table>
+       
+      
+        <!--Definimos una tabla2 independiente para la Descripción del Producto-->      
+        <table id="tabla2" >
+            <tr>                 
+                <td>
+                    <h4>Descripción:</h4>
+                    <P>
+                        Si buscas comodidad al momento de trabajar, estudiar o leer, el Sillón Ejecutivo Negro es lo que necesitas, relleno en espuma de densidad D25 en el asiento,
+                        <br>
+                        para mayor firmeza y soportar el peso de tu cuerpo y D18 para más suavidad en el respaldo.
+                        <br>    
+                        La regulación de la altura funciona con cilindro de gas, que permite bajar o subir el asiento con muy poco esfuerzo, incluso estando sentado en el sillón.
+                    </P>                        
+               </td>   
+               
+            </tr>
+            
+        </table>
+        <br>
+
+        <!--Agregamos una fil directa -->
+        <tr>
+            <center>
+            <img src="Fotos/tarjetas.jpg"width=300  height=100>
+            </center>
+        </tr>
+        <table width="100%" border="1" bordercolor="#0000FF" ></table> <!--dibujamos un linea-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <!--Definimos una tabla3 de  1 x 1 independiente para el pie de la página-->
+        <!-- -->
+        <table id="tabla3">
+            <tr>
+                <td>
+                    <h5>
+                        Contacto : +(56) 9 510 670 890
+                        <br>
+                        Francisco Bravo Zurita
+                        <br>
+                        franciscobravo@ventas.cl
+                        <br>                    
+                    </h5>
+
+                    <img src="Fotos/redessociales.jpg"width=150  height=40>
+                    <br>
+                    <br>
+                    
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+       
+        <br>
+        <br>
+        <br>
+    </body>
+
+</html>

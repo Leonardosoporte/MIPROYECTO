@@ -1,0 +1,73 @@
+#home{   
+  width: 100%;   
+  text-align: left;   
+  /*   text-align: center;   */
+  
+}
+
+
+/* Referenciamos a la tabla33 del codigo html   */
+#tabla1{   
+  width: 80%;   
+  margin-left: 10%;    
+  
+}
+
+
+h2{   /* usado en tabla 3 */
+    color: #12af27;
+    font-family: Arial;
+    font-size: 20;       
+    text-align: center;  
+}
+
+
+/* ----------------------------------------------------------------------------*/
+h4{         /* usado en tabla 4 , efectos al titulo h4 "Descripción" */
+    color:rgb(241, 13, 13);
+    font-family: Arial;
+    font-size: 20;       
+    text-align: center;  
+  }
+
+p{          /* usado en tabla 4, efectos al texto parrafo de la descripción*/
+    color:rgb(6, 1, 24);
+    font-family: Arial;
+    font-size: 14;       
+    text-align: left;  
+}
+
+
+#tabla2{   
+    width: 70%;   
+    margin-left: 15%;        
+    border-radius: 1em;  /* coloca un borde redondo en la terminación de los angulos  */
+    text-align: center;  
+    border:none       
+}
+
+
+#tabla5{      /* tabla 5, texto del pie de pagina */
+    width: 80%;   
+    margin-left: 10%;    
+    background:  #d5d8dc;
+   
+    border-radius: 1em;  /* coloca un borde redondo en la terminación de los angulos  */
+    text-align: center;  
+    border:none       
+}
+
+
+h5{       /*caracteriticas del texto de titulo h5  */
+    color:red;
+    font-family: Arial;
+    font-size: 12;       
+    text-align:center;  
+}
+
+
+li{
+  text-align:center;  
+}
+
+/* ----------------------------------------------------------------------------*/

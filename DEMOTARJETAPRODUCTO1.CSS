@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Poppins', sans-serif; /*Referenciamos eel tipo de letra seleccionado
+                                        en el link del head    */
+}
+
+body {
+    display: flex;     /*La propiedad de display flex, ayuda a colocar las cajas
+                       como si fueran celdas de tablas, con un comportamiento  
+                       predecible y adaptable. Mozilla a estas cajas flexibles
+                       las llama el Diseño del Santo Grial, flex soluciona problemas
+                       de control del diseño y se adpata facilmente a los diferentes
+                       dispositivos.   */
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*Definimos la altura minima del elemento,es decir 100%
+                                           del alto de la pantalla        */
+    background:  #640316 ;
+}
+
+/*Llamamos a la clase Card   */
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.card .card_landing {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000; /*Se trata de la propiedad box-shadow, que permite 
+                       aplicar una sombra a un elemento, a una caja <div>.
+                       Los atributos son: la distancia horizontal de la sombra.
+                       la distancia vertical de la sombra.    */
+
+
+    /*background: linear-gradient,permite crear un degradado con una transparencia del 80% 
+    en este caso se aplica a la imagen a la parte de abajo
+    el 80% que sea transprente, por ej.si cambiamos a 50% cubre menos transparencia*/
+    background: linear-gradient(transparent 80%, #000), var(--i);  
+      
+    background-position: center;
+    background-size: cover;  /* Escala la imagen al mayor tamaño posible sin estirarla.    */
+    z-index: 100;
+}
+
+.card .card_landing h6 {
+    /*Definimos estilos al titulo de la tarjeta "Sillón Ejecutivo"   */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+/*Definimos los estilos para el encabezado de la tarjeta  */
+.card .card_info {
+    position: absolute;
+
+    /*Width y Height nos permiten pocesionar de descripción de la
+    tarjeta al lado de la imagen   */
+    width: 90%;  
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;  /*Definimos el color de fondo de la tarjeta   */
+    z-index: 90;
+    box-shadow: 0 5px 10px #000000; /*Aplicamos una pequeña sombra al borde
+                                     inferior de la tarjeta  */
+    transition: 0.5s; /*Tiempo de transición que aparece la tarjeta con 
+                sus caracteristicas   */
+}
+
+.card:hover .card_info {
+    left: 100%;  /*Indicamos a la tarjeta de la descripción que se mueva a la
+                 izquierda segun la posición de la imagen  */
+}
+
+.card_info .head {
+    padding: 5px 0;
+    border-bottom: solid 1px #bc8811;
+}
+
+
+/*Definimos los estilos del Head de la tarjeta, los ttulos "Sillon Ejecutivo,Precio 99.900"   */
+.card_info .head .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #bc8811;
+}
+
+.card_info .head .description {
+    display: flex;  /*Ubica los elementos en pantalla   */
+    gap: 10px; /*nos permite determinar los espaciados entre los elementos.   */
+}
+
+.card_info .head .description .item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card_info .head .description .item i {
+    color: #bc8811;
+    font-size: 15px;
+}
+
+
+/*Estilos al elemento parrafo  */
+/* Usamos los punots. para llamar a las distintas clases
+dentro de las clases  */
+.card_info .head .description .item p {
+    font-size: 13px;
+}
+
+.card_info .content {
+    margin-top: 15px; /*Definimos un margin top para el titulo "Ver Producto
+                  si aumentamos, por ej. a 25 la etiqueta "Ver Producto" queda
+                  más abajo, se sale del margen abajo de la tarjeta   */
+}
+
+.card_info .content .list {
+    padding: 10px 15px;
+}
+
+.card_info .content .list li {
+    font-size: 14px;
+    margin-bottom: 5px; /*Indicamos el espacio entre los <li>, es decir las caracteristicas  */
+}
+
+/*Programas el Boton de "Ver Productos */
+.card_info .action .btn {
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    background: #bc8811;
+    display: block;
+    margin-top: 10px;
+}

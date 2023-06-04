@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Efecto Responsive</title>
+	
+	<link rel="stylesheet" href="DEMOEFECTOSLIDER.CSS" type="text/css"> <!--llamamos a nuestro archivo .CSS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> <!--llamamos a nuestro codigo Ajax para el efecto-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="js/jquery.flexslider.js"></script>  <!--enlazamos con nuestra carpeta-->
+
+	<!--llamamos a una funcion script que nos permite sobreponer las 3 fotos en 1 sola, superposicion de fotos -->
+	<script type="text/javascript" charset="utf-8">  
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					touch: true,
+					pauseOnAction: false,
+					pauseOnHover: false,
+				});
+			});
+	</script>	
+	
+</head>
+<body>
+	
+<body>
+	<div class="flexslider">
+		<ul class="slides">
+			<li>   <!--definimos 3 listas para las imagenes-->
+				<img src="imagenes/PAISAJE-1.jpeg"  width="900"  height="500">
+				<section class="flex-caption">
+					<p>FOTO  1</p>
+				</section>
+			</li>
+			<li>
+				<img src="imagenes/PAISAJE-2.jpeg"  width="900"  height="500">
+				<section class="flex-caption">
+					<p>FOTO 2</p>
+				</section>
+			</li>
+			<li>
+				<img src="imagenes/PAISAJE-3.jpeg"  width="900"  height="500">
+				<section class="flex-caption">
+					<p>FOTO  3</p>
+				</section>
+			</li>
+			
+			<li>
+				<img src="imagenes/PAISAJE-4.jpeg"  width="900"  height="500">
+				<section class="flex-caption">
+					<p>FOTO  4</p>
+				</section>
+			</li>
+			<li>
+				<img src="imagenes/PAISAJE-5.jpeg"  width="900"  height="500">
+				<section class="flex-caption">
+					<p>FOTO  5</p>
+				</section>
+			</li>			
+			
+		</ul>
+	</div>
+</body>
+</html>

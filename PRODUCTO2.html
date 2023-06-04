@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<HEAD>
+
+		<meta charset="UTF-8">
+		<title>PRODUCTO 2</title>
+
+		<!--
+			jQuery es una librería desarrollada en 2006 por John Resig que permite añadir una capa 
+			de interacción AJAX entre la web y las aplicaciones que desarrollemos controlando eventos, 
+			creando animaciones y diferentes efectos para enriquecer la experiencia de usuario.  
+
+			Ajax (Asynchronous JavaScript and XML) se refiere a un grupo de tecnologías que se utilizan
+			para desarrollar aplicaciones web. Al combinar estas tecnologías, las páginas web parece que
+			son más receptivas puesto que los paquetes pequeños de datos se intercambian con el servidor
+			y las páginas web no se vuelven a cargar cada vez que un usuario realiza un cambio de entrada.
+			Ajax permite que un usuario de la aplicación web interactúe con una página web sin la
+			interrupción que implica volver a cargar la página web. La interacción del sitio web
+			ocurre rápidamente sólo con partes de la página de recarga y renovación. 
+			
+			Flexslider es un Plugin  un complemento de desplazamiento de contenido jQuery. 
+			Le permite crear fácilmente efectos de desplazamiento de contenido con un alto grado 
+			de personalización. Flexslider para crear fácilmente varios efectos de carrusel de imágenes,
+			efectos de imagen de enfoque y texto mixto y efectos de desplazamiento.
+
+			Los plugins son pequeños programas complementarios que amplían las funciones de aplicaciones
+			web y programas de escritorio. Por norma general, cuando instalamos un plugin,
+			el software en cuestión adquiere una nueva función.
+		-->
+ 		<!--llamamos a nuestro archivo .js requerido por flexslider,externo-->
+		<link rel="stylesheet" href="flexslider.css" type="text/css">
+		
+        <!--llamamos a nuestro archivo Pagina2.css,interno-->
+		<link rel="stylesheet" type="text/css" href="PRODUCTO2.css">  
+		
+
+		<!--llamamos a las funciones ajax de jquery de javascript, son librerias que estan alojadas
+		en internet y haciendo un link referenciandolas las puedo usar.
+		aqui llamamos a nuestro archivo jquery.min.js que esta alojado en u servidor externo
+		es un CDN		
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> <!--llamamos a nuestro codigo Ajax para el efecto-->
+		
+		<!--llamamos a nuestro codigo del efecto Flexsilder.js que esta en la carpeta js
+		Flexslider.js es un plugin para crear sliders y carruseles responsives 
+		que podemos usar en sitios web y sistemas, en nuestro caso esta instalado en nuestras
+		carpeta MiPagina/js/-->
+		<script src="js/jquery.flexslider.js"></script>  
+
+		
+		
+		<!--llamamos a una funcion script  flexslider que nos permite sobreponer
+		las 3 fotos en 1 sola, es decir superposicion de fotos,  -->
+		<script type="text/javascript" charset="utf-8">  
+				$(window).load(function() {
+					$('.flexslider').flexslider({     
+						touch: true,
+						pauseOnAction: false,
+						pauseOnHover: false,
+					});
+				});
+		</script>	
+		<!--todo las rutinas y cargas anteriores se hacen en el Head ya que es lo primero que
+			carga el navegador y despues el Body, por tanto la instrucción windows.load(funcion)
+			una vez que se cargue todo el contenido se ejecuta la instrucción windows.load
+			colocando el efecto en pantalla
+		-->	
+	</HEAD>
+
+
+	<body>
+		
+		<table id="home" >
+			<tr>
+				<!--En el .css cambiamos la alineación
+				text-align: left; en #home{     -->
+                <td>
+					<a href="INDEX.html" >
+					   <img src="FOTOS/home1.jpg" width="50"   height="50"  />
+					</a>      
+                </td>
+			
+            </tr>
+        </table>
+
+		<br>		
+		<br> 
+	
+		<!--Definimos la tabla "tabla1" para colocar las fotos o imagen que se mostraran-->
+		<!-- -->
+
+		<table id="tabla1" >
+			<tr>			 
+				<td>	 <!--primera columna  o celda de la izquierda-->
+					<div class="flexslider"> <!--aqui va el mismo nombre definido en la funcion-->
+						<ul class="slides">
+							<li>   <!--definimos 3 listas para las imagenes-->					 
+								<img src="Fotos/fotosillon1.jpg" >										 
+							</li>
+							<li>
+								<img src="Fotos/fotosillon2.jpg" >						
+							</li>
+							<li>
+								<img src="Fotos/fotosillon3.jpg" >						
+							</li>
+							<!--AQUI PUEDO AGREGAR MAS FOTOS SOLO AGREGANDO <li>-->
+
+						</ul>
+					</div>
+				</td>
+		
+		
+				<td>    <!--segunda columna  o celda de la derecha-->
+					<img src="Fotos/nuevoproducto.png" width=350  height=100>
+					<br>         
+					<img src="Fotos/despachogratis.jpg"  width=250  height=100>          
+					<h2>Home Collection</h2>                    
+					<h2>Sillón Modelo Ejecutivo Negro</h2>                
+					<h2>PRECIO OFERTA : $ 39.900</h2>
+					<br>                  
+									
+					<h4>Marca: Home</h4>
+					<h4>Material: Metal/Madera/Pu</h4>
+					<h4>Garantía: 3 Años</h4>
+					<h4>Material: Madera/Metal/Plástico</h4>
+					<h4>Alto: 124 Cm</h4>
+					<h4>Largo: 51 Cm</h4>
+					<h4>Profundidad: 51 Cm</h4>                        
+									
+				</td>	
+			</tr>            
+		</table>
+
+		<br>
+		<br>
+
+		<center>
+		<table width="80%" border="1" bordercolor="#0000FF" ></table> <!--dibujamos un linea-->
+		</center>
+
+		<!--PASO 4 Definimos una tabla4 independiente para la Descripción del Producto-->
+		<!--  -->
+		<br>
+		<br>
+		<table id="tabla2" >   <!--sacar propedad BORDER despues-->
+			<tr>                 
+				<td>
+					<h4>Descripción:</h4>
+					<br>
+					<P>
+						Si buscas comodidad al momento de trabajar, estudiar o leer, el Sillón Ejecutivo Negro es lo que necesitas, relleno en espuma de densidad D25 en el asiento,				
+						para mayor firmeza y soportar el peso de tu cuerpo y D18 para más suavidad en el respaldo.		
+						La regulación de la altura funciona con cilindro de gas, que permite bajar o subir el asiento con muy poco esfuerzo, incluso estando sentado en el sillón.
+					</P>                        
+				</td> 
+
+				<td>			
+				<img src="Fotos/tarjetas.jpg"width=300  height=100>
+				</td>
+
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	
+		<!--Definimos una tabla5 1 x 1 independiente para el pie de la página-->
+		<!-- -->
+		<table id="tabla5">
+			<tr>
+				<td>
+					<h5>
+						Contacto : +(56) 9 510 670 890
+						<br>
+						Francisco Bravo Zurita
+						<br>
+						franciscobravo@ventas.cl
+						<br>                    
+					</h5>
+
+					<img src="Fotos/redessociales.jpg">
+					<br>
+					<br>
+					
+				</td>
+			</tr>
+						
+		</table>
+		
+		<br>
+		<br>
+		<br>
+
+
+	</body>
+</html>

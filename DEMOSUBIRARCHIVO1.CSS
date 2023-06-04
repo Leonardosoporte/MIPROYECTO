@@ -1,0 +1,124 @@
+*
+{
+    margin: 0px;
+}
+
+body{
+    margin-top: 45px;
+    background-color: #037E8C  ;
+    margin-left: 50px; /*Usamos el margen izquierdo para centrar el formulario    */
+}
+
+
+h2{
+    font-family: arial;
+    font-size: 35;
+    color:white;
+    text-align: center;
+    
+}
+
+p{
+    color:blue;
+}
+#nombre {
+    /*Aplicamos diseño al input del nombre   */
+    font-size: 100%;
+    outline: none;
+    width: 500px;
+    height: 25px;
+    border: 1px solid #ccc;  
+  
+  }
+
+  #comentario{
+    /*Aplicamos diseño al input del nombre   */
+    font-size: 100%;
+    outline: none;
+    width: 600px;
+    height: 25px;   
+    border: 1px solid #ccc;
+  }
+
+  #subirfile {
+    /*Aplicamos diseño al input del nombre   */
+    font-size: 100%;
+    outline: none;
+    width: 500px;
+    height: 25px;   
+    border: 1px solid #ccc;
+  }
+
+form
+{            /* definimos caracteristicas para el formulario en general    */
+    background-color:  white ;
+    width:50%;   /* definimos un ancho de 50% de pantalla  */
+    border:5px solid #ccc;   /* agregamos un borde solido   */
+    margin-left:300px;
+    padding:20px;
+}
+
+label
+{    /* definimos para los label tipo y tamaño defuente  */
+    font-family: Arial;
+    font-size: 20px;
+}
+
+input
+{             /* esto incluye que se apliquen los estilos al textarea */
+    margin-bottom: 20px;     /*permite separar los input */
+    width: 100%; /*Permite agrandar o achicar el area de texto   */
+    padding: 10px;           /* es padding agrega un espacio dentro de los text o la caja */
+    border: 1px solid #ececea;
+    font-size: 20px;
+}
+
+input:focus
+{ /* focus nos permite ver cuando un usuario este seleccionando un input */
+    border: 5px solid #6c17f5; /* permite cambiar el color del borde del text */
+    background: #E0F8F7 ;
+ 
+}
+
+
+
+/* ahora aplicamos mas efectos al boton submit, mas avanzado */
+
+input[type="submit"]
+{
+    margin-bottom: 0%;
+    background:    #aab7b8  ;
+    color:#fff;           /* color de la fuente del boton */
+    font-size: 20px;        /* tamaño de la fuente del boton */
+    border:none;            /* le quitamos el borde al boton */
+    border-radius: 1em;
+    
+}
+
+/* ahora aplicamos mas efectos al boton submit, mas avanzado */
+
+input[type="submit"]:hover
+{     /* hover para cuando pasemos el mouse sobre el boton */
+    background:    #12ca09  ;    /* al pasar el mouse cambia a este color */
+    cursor: pointer;            /* Indica el clic para activar el objeto */
+}
+
+
+input[type="reset"]
+{
+    margin-bottom: 0%;
+    background:    #aab7b8  ;
+    color:#fff;           /* color de la fuente del boton */
+    font-size: 20px;        /* tamaño de la fuente del boton */
+    border:none;            /* le quitamos el borde al boton */
+    border-radius: 1em;
+}
+
+/* ahora aplicamos mas efectos al boton submit, mas avanzado */
+
+input[type="reset"]:hover
+{     /* hover para cuando pasemos el mouse sobre el boton */
+
+    background:     #12ca09  ;    /* al pasar el mouse cambia a este color */
+    cursor: pointer;            /* cambia el puntero del mouse a manito */
+}

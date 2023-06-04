@@ -1,0 +1,165 @@
+/* MAQUETACION.CSS    */
+
+*{
+    /* el * arriba es un selector universal permite */
+    font-family: Arial, Helvetica, sans-serif;      /* tipo de fuentes por defecto */
+}
+
+h4{    /*titulo : Empresa de Servicios */
+    font-size: 30;
+    font-family: 'Times New Roman';
+    color: #520ab1; /* color del titulo */
+}
+
+
+
+
+/*  MENU VAR ---------------------------------------------------------------------------*/    
+
+.Nav{   
+    padding-top: 5; /* deja un espacio entre el menu y section. */
+    margin-left: 20; /* corre el menuvar 20 pixel a partir de la posición izquierda.*/
+}   
+.Menunav{
+    list-style: none;
+    padding: 0;
+    background:  #17202a ;
+    width: 80%;  /*  900 px ancho */
+    max-width: 100%; /* max 1000 px */
+    margin-left:13%;  /* margen left 320 px aqui se cambia el margen inzquierdo para correr el menu */
+    margin-top:0 ;  
+}
+
+.Menunav li a{
+    /*se fijan los efectos css a la lista de elementos <li> del menu   */
+    text-decoration: none;
+    background-color:#064892 ; /* color de fondo del menu */
+    font-size: 20;
+    color:  #ffffff80 ;  /* color de las letras del menu */
+    padding:10px 15px; /* define los espacios del rectangulo que forman el menuvar */
+    display: block;  /* define un bloque donde encierra al menu principal */
+}
+
+.Menunav li a:hover{
+    background-color:  #d35400 ; /* define el color de fondo cuando se pasa
+                                   el mouse sobre las opciones del menu */
+}
+
+.Menunav > li {
+float: left; /* permite sobreponer de manera flotante el menu */
+}
+
+.Menunav li ul{  /*define las posiciones del menu en la pantalla del navegador */
+    display:none;
+    position: absolute; /* tomará como referencia la ventana del navegador */
+    min-width: 140px;
+    list-style: none; /* sacamos los puntos de menu */
+}
+
+.Menunav li:hover > ul{
+   /*activa cuando el cursor se desplaza sobre la lista de menus y cambia de color */
+    display: block;   
+}
+
+
+
+
+
+/*  PARTE   3
+/*--------------------------------------------------------------------------------------------------*/
+/*  -CONTENIDO (HAEADER-ENCABEZADO, SECTION-SECCIONES,ARTICLE-ARTICUOS,ASIDE-BARRAS LATERALES----------------------------------------------------------------------------------------*/
+/* definimos la clase Contenido definida en el DIV en Html--*/
+
+
+h3{   /* fefinimos <h3>Nuestra Noticias</H3>  */
+    color: #90a2f1; 
+}
+
+
+h2{   /* fefinimos <h3>Nuestra Noticias</H3>  */
+    font-family: arial;
+    font-size: 20px;
+    color: #90a2f1; 
+}
+
+
+
+/* LLAMAMOS A LA CLASE CONTENIDO   */
+.contenido
+{   /* se definen los espacios de centrado para las secciones, articulos y 
+    barras laterales, contenido va a contener el Section y le Aside */
+   
+   
+    margin-left: 20px;  /*Definimos un margen izquierdo de 20px al contenidos    */
+    
+  
+    margin-top:100px ; /* este deja un espacion entre la primera linea de inicio hasta
+                     donde comienza el .contenido ,en el medio se ubica menunav.
+                      (contenido, seccion y aside) */
+                  
+    height: 800px; /*altura del contenido que encierra al section, article y aside(barra lateral)*/
+    width: 90%; /* cubre el 90% de ancho de la pantalla */
+}
+
+/* DEFINIMOS EL SECTION, LLAMAMOS AL A CLASE SECTION----------------------------------------------------------------------*/
+.section
+{
+    margin-left: 10% ;  /* 140 px left */
+    height: 620px;  /* fijamos el alto del section,debe ser la misma medida en el Aside */
+    width: 51%;   /* 700 pxancho, la diferencia lo cubre el Aside(Barra lateral) */
+    padding:1%;
+    border: 3px solid#ae93ee;  /*borde del rectango por fuera*/
+    background:#F2F2F2;
+    /* La propiedad CSS border-radius permite a los desarrolladores Web definir
+     qué tan redondeadas serán las esquinas.*/
+    border-radius: 1em;
+    float:left ;  /* alinea el bloque al lado izquierdo, permitiendo que el aside se ubique arriba,derecha   */
+    overflow: auto;  /*permite poner la barra de desplazamiento scroll */
+}
+    
+    
+
+
+
+/*    PARTE   4   ASIDE, LLAMAMOS A LA CLASE ASIDE -------------------------------------*/    
+.Aside
+{
+    padding:1%;  /* separa el section del aside, un pequeño margen entre ellos  */
+    margin-right: 0px; /*Definimos el margen derecho del Aside    */
+    border: 3px solid#5218da;  /*borde del rectango por fuera*/
+    height: 620px; /* fijamos el alto del Aside dentro del section, para que tengan la misma altura.*/
+    width: 30%;  /*  300px ancho */
+
+    /*   background:#F2F2F2;;  */
+    border-radius: 1em;
+    float: right;
+    
+}
+
+
+.Aside ul li{   /* fefinimos <h3>Nuestra Noticias</H3>  */
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;
+    color:  #2c0242 ; 
+    
+   
+}
+
+/*  PARTE   5   FOOTER, LLAMAMOS A LA CLASE FOOTER ----------------------------------------------------------------*/    
+
+
+.Footer{
+    width: 90%px;  
+    margin-left: 5%;
+    margin-right: 5%;  
+    margin-top:0;
+  
+    margin-bottom:50 ;  /* fija el espacio entre el margen final del navegado
+                         y el margen de abajo del foter */
+    font-size: 14px;   /* tamaño de la fuente */
+    color: #f8f6fa; /* fuente blanca */
+    background:#37287c; /* fondo azul */
+    border: 3px solid#FB0303;  /* tamaño y color del borde rojo */
+    border-radius: 1em; /* terminacion del borde circular */
+}

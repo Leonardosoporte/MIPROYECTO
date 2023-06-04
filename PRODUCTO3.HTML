@@ -1,0 +1,167 @@
+<!--PRODUCTO3.html DISEÑO DE PAGINA PRODUCTO -->
+<html>
+    <!DOCTYPE html>
+    <html lang="es">
+    
+    <head>
+       <Title>PRODUCTO 3</Title>      
+       <Meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="PRODUCTO3.CSS">         
+    </head>
+    
+    <body>
+        <br>
+        <table id="home">
+            <tr>
+                <td>
+                <a href="index.html" target="_blank" > H O M E </a>         </a>
+                <!--Los estilos del boton home lo poenes en el css-->
+                </td>
+            </tr>
+        </table>
+
+        <!--Definimos una tabla1 de 1 fila por 2 columnas para las fotosy logos-->
+        <table id="tabla1">
+            <tr>
+                <td>
+                    <Div class="fotos">   
+                       <!-- aqui determino el tamaño de las fotos, por ende el del banner -->
+                        <img name="slider4" width="400"  height="400">                                            
+                        <script>  
+                            /* aqui comienza la programacion script */
+
+                            /*El método addEventlistener, es un escuchador que indica
+                            al navegador que este atento a la interacción del usuario.
+                            La ventaja es que se escribe totalmente en el JS, sin necesidad
+                            de tocar el HTML.    */
+                            window.addEventListener('load',function()
+                            {                             
+                            
+                               /* las fotos las vamos a administrar a traves de un arreglo */
+                               /*cada indice del arreglo va a contener una imagen */imagenes
+                               var imagenes = []           ;              
+                               imagenes[0] ='./fotos/fotosillon1.jpg';
+                               imagenes[1] ='./fotos/fotosillon2.jpg';
+                               imagenes[2] ='./fotos/fotosillon3.jpg';
+                             
+                               /*Para agregar otra foto agregamos un indie mas
+                               en  if (indiceImagenes < 2) abajo controlamos
+                               cuantas imagenes tenemos que controlar  */
+                              
+                               /* creamos un codigo que cambie automaticamente las fotos */
+                               /* lo hacemos a traves de una funcion ir variando el indice */
+                               var indiceImagenes=0;   /*del arreglo */
+                               function cambiarImagenes()  /*Definimos la función    */
+                               {
+                                  document.slider4.src=imagenes[indiceImagenes];
+                            
+                                  if (indiceImagenes < 2) {   /* si el indice de imagenes es menor que 2 sume 1 al indice */
+                                      indiceImagenes++;  /* se aumenta en 1 */
+                                  } else {
+                                    indiceImagenes=0; 
+                                    /*caso contrario, si el indice llego a 2 cambielo a o
+                                    es decir vuelve a la primera foto posición cero 0 */
+                                  }
+                                        
+                                }  
+                                
+                                /*   
+                                La función setInterval() se utiliza comúnmente para establecer
+                                un retardo en funciones que son ejecutadas una y otra vez,
+                                como por ejemplo las animaciones.                          
+                                */
+
+                                /* a la funcion carbiarImagenes le agregamos intervalos de tiempos para las fotos */
+                                /* 1000 equivale a 1 segundos */
+                                setInterval(cambiarImagenes,2000); /* aqui llamamos a la funcion de arriba */
+                            });
+                        </script>                        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </Div>
+                </td>      
+
+                <td>
+                    <img src="Fotos/nuevoproducto.png" width=350  height=100  </A>
+                    <br>                   
+                    <h2>Home Collection</h2>                    
+                    <h2>Sillón Modelo Ejecutivo Negro</h2>                
+                    <h2>PRECIO OFERTA : $ 39.900</h2>
+                    <br>                  
+                    <lu>                       
+                        <li>Marca: Home</li>
+                        <li>Material: Metal/Madera/Pu</li>
+                        <li>Garantía: 3 Años</li>
+                        <li>Material Estructura: Madera/Metal/Plástico</li>
+                        <li>Alto: 124 Cm</li>
+                        <li>Largo: 51 Cm</li>
+                        <li>Profundidad: 51 Cm</li>                        
+                    </lu>                   
+                </td>
+            </tr>
+        </table>
+
+        <!--dibujamos un linea-->
+        <table width="100%" border="1" bordercolor="#0000FF" ></table>
+       
+      
+        <!--Definimos una tabla2 independiente para la Descripción del Producto-->      
+        <table id="tabla2" >
+            <tr>                 
+                <td>
+                    <h4>Descripción:</h4>
+                    <P>
+                        Si buscas comodidad al momento de trabajar, estudiar o leer, el Sillón Ejecutivo Negro es lo que necesitas, relleno en espuma de densidad D25 en el asiento,
+                        <br>
+                        para mayor firmeza y soportar el peso de tu cuerpo y D18 para más suavidad en el respaldo.
+                        <br>    
+                        La regulación de la altura funciona con cilindro de gas, que permite bajar o subir el asiento con muy poco esfuerzo, incluso estando sentado en el sillón.
+                    </P>                        
+               </td>   
+               <td>
+                <img src="Fotos/tarjetas.jpg"width=300  height=100>
+               </td>
+            </tr>
+        </table>
+        <br>
+
+        <table width="100%" border="1" bordercolor="#0000FF" ></table> <!--dibujamos un linea-->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <!--Definimos una tabla3 de  1 x 1 independiente para el pie de la página-->
+        <!-- -->
+        <table id="tabla3">
+            <tr>
+                <td>
+                    <h5>
+                        Contacto : +(56) 9 510 670 890
+                        <br>
+                        Francisco Bravo Zurita
+                        <br>
+                        franciscobravo@ventas.cl
+                        <br>                    
+                    </h5>
+
+                    <img src="Fotos/redessociales.jpg"width=150  height=40>
+                    <br>
+                    <br>
+                    
+                </td>
+            </tr>
+        </table>
+       
+        <br>
+        <br>
+        <br>
+    </body>
+
+</html>

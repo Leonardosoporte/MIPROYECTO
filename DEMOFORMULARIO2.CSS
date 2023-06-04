@@ -1,0 +1,115 @@
+*
+{
+    margin: 0px;
+}
+
+body{
+    margin-top: 25px;
+    background-color: #020746 ;
+    margin-left: 60px; /*Usamos el margen izquierdo para centrar el formulario    */
+}
+
+p{
+    font-family: arial;
+    font-size: 15;
+    color:#6c17f5
+}
+
+option
+{  /*Definimos estilos para el contenidos de los Items    */
+    font-family: arial;
+    font-size: 20;
+    color:#6c17f5
+}
+
+form
+{            /* definimos caracteristicas para el formulario en general    */
+    background-color:  white ;
+    width:50%;   /* definimos un ancho de 50% de pantalla  */
+    border:5px solid #ccc;   /* agregaos un borde solido   */
+    margin-left:300px;
+    padding:20px;
+}
+
+label
+{    /* definimos para los label tipo y tamaño defuente  */
+    font-family: Arial;
+    font-size: 14px;
+}
+
+input, textarea
+{             /* esto incluye que se apliquen los estilos al textarea */
+    margin-bottom: 20px;     /*permite separar los input */
+    width: 100%; /*Permite agrandar o achicar el area de texto   */
+    padding: 10px;           /* es padding agrega un espacio dentro de los text o la caja */
+    border: 1px solid #ececea;
+    font-size: 20px;
+}
+
+input:focus
+{ /* focus nos permite ver cuando un usuario este seleccionando un input */
+    border: 5px solid #6c17f5; /* permite cambiar el color del borde del text */
+    background:  #f3f2c7 ;
+ 
+}
+
+
+textarea
+{  
+    /* permite definir si se va a poder cambiar el tamaño */
+    /* resize:horizontal; horizontal indica que solo se puede ampliar horizontalmente, no vertical     */
+    /* Resize:both, permite mover horizontal y vertical, viene por defecto */
+    /* Resize:vertical, solo se agranda de manera vertical */
+    resize:vertical;
+    max-height: 200px;      /* con max le indicamos el maximo que puede agrandarse hacia abajo */
+    min-height: 100px;      /* indicamos el minimo de tamaño que puede contraerse */
+    background:  #f5f5f3 ;
+
+}
+
+.radio
+{        /* llamamos a la clase radio  */
+    color:rgb(252, 26, 26);  /* color de la fuente */      
+}
+
+
+/* ahora aplicamos mas efectos al boton submit, mas avanzado */
+
+input[type="submit"]
+{
+    margin-bottom: 0%;
+    background:    #aab7b8  ;
+    color:#fff;           /* color de la fuente del boton */
+    font-size: 20px;        /* tamaño de la fuente del boton */
+    border:none;            /* le quitamos el borde al boton */
+    border-radius: 1em;
+    
+}
+
+/* ahora aplicamos mas efectos al boton submit, mas avanzado */
+
+input[type="submit"]:hover
+{     /* hover para cuando pasemos el mouse sobre el boton */
+    background:    #12ca09  ;    /* al pasar el mouse cambia a este color */
+    cursor: pointer;            /* Indica el clic para activar el objeto */
+}
+
+
+input[type="reset"]
+{
+    margin-bottom: 0%;
+    background:    #aab7b8  ;
+    color:#fff;           /* color de la fuente del boton */
+    font-size: 20px;        /* tamaño de la fuente del boton */
+    border:none;            /* le quitamos el borde al boton */
+    border-radius: 1em;
+}
+
+/* ahora aplicamos mas efectos al boton submit, mas avanzado */
+
+input[type="reset"]:hover
+{     /* hover para cuando pasemos el mouse sobre el boton */
+
+    background:     #12ca09  ;    /* al pasar el mouse cambia a este color */
+    cursor: pointer;            /* cambia el puntero del mouse a manito */
+}

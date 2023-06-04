@@ -1,0 +1,43 @@
+body
+{
+    background: #c4dbf5;
+    font-family: arial;
+}
+
+#contenedor1
+{
+    margin:120px auto;  /*centrar los 4 margenes en 120 px  */
+    width:1050px;  /* width especifica la anchura del contenido del elemento tabla    */
+}
+
+table{
+    text-align: left;
+    border-collapse: collapse;  /*border-collapse se utiliza para fusionar los bordes    */
+    width:100%;  /* width 100% es para que la tabla ocupe todo el ancho del elemnto contenedor   */
+}
+
+thead{   /* Aplicamos CSS al encabeza    */
+    background: #246355;
+    color: white;
+}
+
+tr{    /* Aplicamos color de fondo a las filas    */
+    background-color: #ddd;
+}
+
+tr:hover{   /* Hover se utiliza para seleccionar y dar estilo al pasar con el mose
+               por encima de un elemento u objeto.  */
+    background-color: #4b995c;   
+    color:white;  /* al pasar el mouse cambia la letra a color blanco   */
+}
+
+/*  Para quitar los punto generados por <li> en las descripción */
+li{
+    list-style:none;
+}
+
+/*  Colocamos un borde alrededor de cada celda, es opcional...  */
+
+tr,td{   /*Referenciamos la fila y la columna     */
+    border:2px solid rgb(227,238,128)
+}

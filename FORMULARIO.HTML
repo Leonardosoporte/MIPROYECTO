@@ -1,0 +1,90 @@
+<HTML>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <HEAD>
+        <title>FORMULARIO</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" type="text/css" href="FORMULARIO.CSS">   
+
+    </HEAD>
+
+        <!--Para enviar ciertos tipos de información al servidor con un formulario
+        el Protocolo HTTP Hypertext Transfer Protocol, Protocolo de transferencia
+        de hipertextos. Podemos enviar los formularios.
+        Para el envio de formulario usamos la etiquet FORM ACTION.
+        Su formato es :
+        <form action=mailto:direcciondecorreo@correo.com....>
+        
+        ATRIBUTO ACTION: El atributo "action" indica el tipo de acción 
+        que va realizar el formulario. La información puede enviar a un
+        correo electronico o a un prgrama que la gestione.
+        Es mediante esta etiqueta que se gestionan los formulario.
+
+        EXISTEN BASICAMENTE DOS METODOS PARA EL ENVIO DE INFORMACION
+        EL METODO GET Y EL POST.
+        Sino se coloca ninguno en el navgador pro defecto asume el 
+        Metodo GET. Sinedo el POST el más usado.
+        Con el método GET, los datos que se envian se escriben en la
+        misma dirección del URL. En la vantana del navegador se puede
+        apreciar algo asi....
+
+        www.ejemplo.com/registrarse.php?nombre=pedro&amp;apellido=perez&amp;edad=55&amp;genero=hombre
+        
+        La mayor desventaja del método GET es su débil protección de los datos. 
+        Los parámetros URL que se envían quedan visibles en la barra de direcciones del navegador
+        y son accesibles sin clave en el historial de navegación.
+
+        El método POST introduce los parámetros en la solicitud HTTP para el servidor. Por ello,
+        no quedan visibles para el usuario. 
+        En lo relativo a los datos, como, por ejemplo, al rellenar formularios con nombres de usuario y contraseñas,
+        el método POST ofrece mucha discreción. Los datos no se muestran en el caché ni tampoco en el historial
+        de navegación. La flexibilidad del método POST también resulta muy útil: no solo se pueden enviar
+        textos cortos, sino también otros tipos de información, como fotos o vídeos.  
+        
+        -->
+        
+
+    <BODY>
+        <br>
+        <br>
+
+        <form autocomplete="off" 
+              action="mailto:capacitacionleonardov@gmail.com"
+              method="post" enctype="text/plain"   >
+              <label for="nombre">Nombre y Apellido  </label>
+              <input type="text"  id="nombre" placeholder="Escriba su nombre y apellido" required>
+            
+              <br>
+              <label for="mail">Mail :   </label>
+              <input type="mail" id="mail"  placeholder="Escriba su correo" required>
+               <br>
+              <!--Textarea: permite la edición multilinea de un cuadro de texto-->
+              <label for="mensaje">Mensaje   </label>
+              <textarea id="mensaje" placeholder="Escriba su mensaje...."></textarea>
+
+              <br>
+              <div class="radio">
+                    <label for="hombre">Hombre  </label>
+                    <input type="radio" name="sexo" id="hombre">
+
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="sexo" id="mujer" >
+              </div>
+
+              <!--Control para introducir una fecha(año,mes y dia)-->
+              <div class="fecha">
+                <label for="fecha">Ingrese o seleccione una fecha</label>
+                <input type="date" name="fecha" id="feha" >
+              </div>
+
+              <br>              
+              <input  type="submit"  value="Enviar">
+              <input  type="reset"   value="Borrar Datos"
+
+        </form>
+        
+    </BODY>
+    
+</HTML>

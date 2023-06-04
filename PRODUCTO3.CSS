@@ -1,0 +1,74 @@
+/* ARCHIVO: PRODUCTO3.CSS */
+
+#home
+{
+    width: 80%;
+    margin-left: 10%;
+    background: #D5D8DC;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+}
+
+#tabla1{
+    width: 80%;
+    margin-left: 10%;
+  
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+}
+
+h2{
+    color:#11b962;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;    
+}
+
+#tabla1 li{
+    margin-left: 20%;
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;
+}
+
+#tabla2{
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+h4{
+    color: rgb(241, 11, 11);
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;  
+}
+
+p{
+    color: black;
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;  
+}
+
+#tabla3{
+    width: 80%;
+    margin-left: 10%;
+    background: #d5d8dc;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+}
+
+h5{
+    color: red;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+
+}
+   

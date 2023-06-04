@@ -1,0 +1,143 @@
+/* ARCHIVO: PRODUCTO3.CSS */
+*{
+    margin: 0;
+}
+h3
+{
+    
+    width: 70%;
+    margin-left: 17%;
+    background: #032759;
+    border-radius: 1em;
+    font-size: 25;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+#tabla1{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+}
+
+h2{
+    color:#11b962;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;    
+}
+
+#tabla1 li{
+    margin-left: 20%;
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;
+}
+
+
+
+
+
+.container .img_container {
+    /*Definimos el tamaño del container   */
+    margin-top: 30px; /*Margen en el borde del home e inicio borde del contauner imagen   */
+    margin-left: 40px; /*Definimos un margen izquierdo a la imagen del container   */
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;    
+}
+
+
+.container .img_container .main_img {
+    width: 100%; /*Indicamosque ocupe el 100% del espacio del container.
+           Por ej. cambiar por 50% en width y height y ver   */
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(1, 23, 46, 0.6);/*Sombra alredor de la imagen  */
+    object-fit: cover;
+}
+
+.container .thumbnail_container {
+    height: 80px; /*Definimos la altura del contenedor   */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container .thumbnail_container .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer; /*Controla la posición del clic del mouse    */
+    object-fit: cover;
+    opacity: .7; /*Definimos la opacidad de la fotos de abajo,por ej. si pones .3
+                 se hace una opacidad mayor viendo menos las imagenes   */
+    transition: .3s; /*TRansición al dar clic para que aparesca la imagen    */
+}
+
+.container .thumbnail_container .thumbnail:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity:  1 ;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tabla2{
+    
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+h4{
+    color: rgb(241, 11, 11);
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;  
+}
+
+p{
+    color: black;
+    font-family: arial;
+    font-size: 20px;
+    text-align: left;  
+}
+
+#tabla3{
+    width: 80%;
+    margin-left: 10%;
+    background: #d5d8dc;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+}
+
+h5{
+    color: red;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+

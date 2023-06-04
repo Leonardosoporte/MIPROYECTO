@@ -1,0 +1,55 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Referenciamos la clase .flex-center,para centrar el texto de arriba
+y el logo arroba abajo   */
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 55px;
+    color: rgb(190, 247, 188);
+    transition: all 300ms;
+}
+
+h1:hover{  /*Cuando pasamos el mouse sobre el titulo arriba se expande
+    si lo cambiamos por ej. a 2.5 se agranda más   */
+    transform: scale(1.15);
+}
+
+/*   */
+#pelicula{
+
+    /*La declaración display: grid te proporciona una cuadrícula de una
+    sola columna, por lo que tus elementos continúan mostrándose uno debajo
+    del otro, como lo hacen en el flujo normal.   */
+    display: grid;  /*La podemos quitar y ver lo que produce  */
+
+    grid-template-columns: repeat(6, 1fr);/*indicamos que queremos 6 columnas en una fila.
+                          si lo cambiamos (3, 2fr) mostrara 3 columnas en 2 filas */
+                          
+    width: 90%;
+    margin: 5%; /*en todos los angulos  */
+    
+    grid-gap: 30px; /* en CSS Grid nos permite determinar los espaciados entre
+                los elementos. En el caso de CSS Grid, esta propiedad nos ayuda 
+                a definir la distancia entre las columnas y filas de la cuadrícula.
+                En este caso es el espacion que queda entre una imagen y la siguiente
+                si lo cambiamos a 15% achicamos el espacio entre las grillas  */
+}
+
+#pelicula img{
+    width: 100%;
+    transition: all 300ms; /*Suavisamos la transición entre una imagen y otra al       
+                            agrandar la imagen al pasar el mouse sobre ella. 
+                            Asi no se ve de golpe el cambio de imagen.
+                            Si ponemos 150ms el cambio es más rapido */
+    position: relative;
+}
+
+#pelicula img:hover{
+    transform: scale(1.15);  /* SE puede cambiar por ej. a 2.0 se amplia mas el zoom de la imagen  */
+}

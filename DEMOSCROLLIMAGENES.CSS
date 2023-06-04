@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /*¿Qué es height 100VH?
+    Esta unidad esta basada en el alto de vista de la ventana, El valor de 1vh
+    es equivalente al 1% del del alto del área de visualización. Mientras que
+    100vh equivale al 100% del alto de área de visualización.   */
+    min-height: 100vh;
+    
+    background: #1878b8;
+}
+
+.container {
+    position: relative;
+}
+
+.container .slider {
+    display: flex;
+    background: #011b27;
+    padding: 2px;
+    width: 900px; /*Definimos el tamaño del slider   */
+    height: 250px; /*Definimos la altura del slider   */
+    overflow: hidden;
+
+    scroll-behavior: smooth; /*El comportamiento de desplazamiento o scroll-behavior
+                         en CSS es una propiedad que nos permite hacer saltos en la 
+                         página usando un desplazamiento menos brusco y más agradable   */
+}
+
+.container .slider img {
+    margin: 3px; /*Definimos una sepración a las imagenes   */
+}
+
+/*Llamamos a la clase .control para los estilos de las flechas    */
+.container .control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #02293b;
+
+    cursor: pointer; /*La propiedad cursor permite seleccionar un puntero entre los
+                    disponibles en el sistema operativo (flecha, mano, reloj de arena,
+                    , etc.).de una imagen que se quiere mostrar como puntero personalizado.  */
+
+    object-fit: contain; /*La propiedad CSS object-fit indica cómo el contenido
+                         de un elemento reemplazado, por ejemplo un <img> o <video>,
+                         debería redimensionarse para ajustarse a su contenedor.     */
+    padding: 10px;
+}
+
+.container .prev {  /*muestra el evento anterior   */
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .next { /*muestra las siguientes fotos   */
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}

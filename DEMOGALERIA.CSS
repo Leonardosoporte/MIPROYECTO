@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;     /*La propiedad CSS flex es una propiedad resumida que
+                       indica la capacidad de un elemento flexible para alterar 
+                       sus dimensiones y llenar el espacio disponible.   */
+
+    align-items: center;
+    justify-content: center;
+
+    /*La propiedad min-height se utiliza para definir la altura mínima de un
+    elemento dado. Impide que el valor de la propiedad height llegue a ser 
+    más pequeña que la especificada en la altura mínima ( min-height ).
+    Se refiere a la altura del bloque contenedor.
+    En cambio 100vh es el 100% del alto de la pantalla (la v es por viewport
+    o ventana visible) y siempre va a ser el mismo para todos los elementos
+    si la pantalla es la misma. Los valores como 100vh o 100vw son útiles
+    si quieres que el tamaño de algo sea relativo al de la ventana,
+    por ejemplo que ocupe toda la ventana.  */
+    min-height: 100vh; /*Definimos la altura minima del elemento,es decir 100%
+                        del alto de la pantalla        */
+    background: #560303;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    transform-style: preserve-3d;  /*La propiedad transform-style CSS establece 
+                                   si el elemento hijo esta posicionado en el
+                                   espacio 3D (preserve-3d).Muestra los elementos en 3D*/
+    animation: image 10s linear infinite; /*Defini el tiempo de giro de las imagenes  */
+}
+
+@keyframes image {  /*Define la perspectiva de rotación ocupando el 100% del tiempo */
+    0% {
+        transform: perspective(3000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(3000px) rotateY(360deg);
+    }
+}
+
+/*Llamamos a la clase container   */
+.container .img {
+    position: absolute; /*El posicionamiento absolute hace que un elemento se 
+                   coloque respecto a su contenedor posicionado mas cercano   */
+    width: 100%;
+    height: 100%;
+    background: var(--img); /*Colocamos la imagen cargada de fondo,las imagenes estan
+                            cargadas en la variable --img   */
+
+    background-size: cover;   /* Escala la imagen al mayor tamaño posible sin estirarla.    */
+
+    /*Definimos la rotación de las imagenes
+    La función CSS rotate() define una transformación que gira un elemento alrededor
+    de un punto fijo en un plano 2D sin deformarlo. El punto fijo alrededor del
+    cual gira el elemento, mencionado anteriormente, también se conoce como el
+    origen de transformación.
+    La function de CSS translate() recoloca un elemento en el eje horizontal y/o vertical.
+    Por ej, si cambiamos translateZ(100px) a mil 1000 las imagenes se juntan  */
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(300px);
+
+}

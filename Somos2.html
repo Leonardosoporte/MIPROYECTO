@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Somos Alfa Diseños</title>
+	<link rel="stylesheet" href="Somos2.css">
+</head>
+<!--
+	Para ver fotos
+	https://www.pexels.com/
+	Otro link para buscar fondos
+    https://www.freepik.es/fotos-vectores-gratis/fondos-para-paginas-web
+
+
+
+-->
+<body >
+	<div id="main-container">
+		<!--¿Qué es Section etiqueta?
+			El elemento de HTML section ( <section> ) representa una sección genérica de un documento.
+		    Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema
+			como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.
+		-->
+		<section id="intro-container">
+			<div class="center-align">
+				<nav>
+					<div id="logo"><img src="Fotos/Logoarroba3.png" width="70" height="70"></div>
+					<div id="menu-lista">
+						<ul>
+							<!--Aqui llamamos a las clases  definidas para nuestras link
+							class="section" id="about-section"
+							class="section bg-black" id="footer"
+							Innovación se conecta con galeria						
+						-->
+							<!--Al presionar Acerca de..busca el id="about-section"
+							el simbolo # Permite buscar una sección dentro del codigo   -->
+							
+							<li><a href="#about-section">Acerca de..., </a></li>
+							
+							<li><a href="#footer">Contacto, </a></li>
+							<li><a href="DEMOGALERIA.HTML" target="_blank ">Innovación.</a></li>							
+						</ul>
+					</div>
+				</nav>
+
+				<div class="section-columns">
+					<div>
+						<h2 class="white">Bienvenidos, Alfa Diseños Oficina</h2>
+						
+					</div>
+
+					<div id="image-bg">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Creamos un rectangulo para nuestra primer area de trabajo
+		La propiedad skew de CSS nos permite distorsionar un elemento 
+		usando los ángulos creados entre sus líneas horizontales y verticales.-->
+		<div class="rectangle bg-white skew-left"></div>
+		
+
+		<!--<li><a href="#about-section">Acerca de.., ENTRAMOS AQUI...-->
+		<div class="section" id="about-section">
+			<div class="center-align">
+				<div class="section-columns">
+					<div>
+						<h2>Diseño.<br />Desarrollo.<br/>E-Commerce.</h2>
+						
+					</div>
+
+
+					<!-- Es un contenedor en línea. Sirve para aplicar estilo al texto
+					o agrupar elementos en línea.Sus etiquetas son: <span> y </span>
+					(ambas obligatorias).-->
+					
+					<div id="biografia">
+						<h3>Todo comenzó en 2010, una emprendedora, motivó a su familia a formar parte de este sueño. Con perseverancia y el trabajo de varios años, hoy Alfa Diseño es un sueño en crecimiento. </h3>
+
+						<p>Cada día podemos ver más empresas que apuestan por oficinas diseñadas por y para el empleado, surgiendo así nuevos conceptos como es el soft seating. Se trata del diseño de espacios pensados para que el trabajador pueda relajarse o disponga de lugares más cómodos y creativos. </p>
+						
+						
+						
+						<p>Puedes seguirnos en <a href="https://twitter.com/?lang=es" target="_blank">Twitter</a> o <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>, o directamente en el <a href="https://www.youtube.com/watch?v=eDtpu2F040c" target="_blank">canal de Youtube</a></p>
+						
+						<div class="btn-section">
+							<!--Llamamos a la clase work01,con btn-back colocamos un fondo negro al boton
+							aqui se devuelve, aqui puedo colocar un archivo .hmlt y referenciarlo.-->
+							<a href="DEMOGALERIA.HTML" class="btn btn-black" target="_blank">Ver proyectos sobresalientes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="rectangle bg-gray skew-right"></div>
+		
+		
+		<div class="rectangle bg-black skew-left"></div>
+		<div class="section bg-black" id="footer">
+			<div class="center-align">
+				<div class="section-columns" >
+					<div>
+						<h2 class="white">Sigamos en Contacto.</h2>
+						<div class="btn-section">
+							<a href="mailto: contacto@misitio.com" class="btn btn-white">Mándame un mensaje</a>
+						</div>
+					</div>
+
+					<div>
+						<h3>Contáctame si quieres conocerme y saber cómo podemos colaborar en tu siguiente proyecto.</h3>
+						<p>También puedes estar conmigo por medio de las redes sociales, enterarte de mi más reciente trabajo y conocerme un poco más.</p>
+
+						<div class="btn-section">
+							<a href="https://es-la.facebook.com/" class="btn btn-white" target="_blank" >Facebook</a>
+							<a href="http://www.twitter.com/" class="btn btn-white"  target="_blank" >Twitter</a>
+							<a href="http://www.instagram.com/" class="btn btn-white"  target=" "  >Instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+

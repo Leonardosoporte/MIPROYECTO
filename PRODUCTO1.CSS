@@ -1,0 +1,129 @@
+/* ARCHIVO: PRODUCTO1.CSS    */
+
+
+#tabla1{   /* llamamos a la tabla3 y definimos sus estilos CSS */
+    width: 80%;  
+    margin-left: 10%;           
+    text-align: center;  
+    border:none       
+}
+
+
+/*  estos 2 fondos se pueden sacar y queda sin bordes */
+/*definidos un fondo para la tabla3 celda 1 */
+#tabla1 td:first-child{    /* :first-child se utiliza para seleccionar y dar estilo a un elemento HTML   */
+    background:#3d0480;
+  }
+
+  h2{   /* usado en tabla 3 */
+    color: #f10a0a;
+    font-family: Arial;
+    font-size: 20;       
+    text-align: center;  
+  }
+
+
+  #tabla1 li{       /* usado en tabla 3 */
+    margin-left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16;       
+      text-align:left;
+  }
+
+/* ----------------------------------------------------------------------------*/
+ h4{         /* usado en tabla 4 */
+    color:black;
+    font-family: Arial;
+    font-size: 20;       
+    text-align: left;  
+  }
+
+  p{          /* usado en tabla 4 */
+    color:black;
+    font-family: Arial;
+    font-size: 20;       
+    text-align: left;  
+  }
+
+
+  #tabla5{   
+    width: 80%;   
+    margin-left: 10%;    
+    background:  #d5d8dc;
+   
+    border-radius: 1em;  /* coloca un borde redondo en la terminación de los angulos  */
+    text-align: center;  
+    border:none       
+}
+
+h5{
+    color:red;
+    font-family: Arial;
+    font-size: 12;       
+    text-align:center;  
+}
+
+
+
+
+
+
+
+ /*  MENU VAR ---------------------------------------------------------------------------*/    
+
+ .Nav{  /*usamosel punto . para llamar a la clase */
+  margin-left: 20; /* define un margen izquierdo al menu en pixel (20 pixel). */   
+  background: #e5e8e8 ;     /* define color de fondo del menu nav */
+}   
+
+.Menunav{
+  list-style: none; /* Quitamos cualquier estilo que tengan las fuentes, en este caso los punto . de la lista */
+  padding: 0;  /* Quita cualquier espacio o relleno entre el elemento y su borde 
+                  puedes visitar este link para una explicación tecnica https://developer.mozilla.org/es/docs/Web/CSS/padding */
+  width: 100%;  /* definimos un ancho del 100% */
+  
+  height: 50px;  /* definidos el alto de la tabla */
+  margin-left:0;  /* margen left px aqui se cambia el margen inzquierdo para correr el menu */
+  margin-top:0 ;  /* Define un margen arriba */
+  font-family: Arial; /* define el tipo de fuente, letras del menu */
+  font-size: 20;      /* define el tamaño de la fuente, letras del menu  */
+  color: #FFFFFF;          /* define color de la fuente, letras del menu  */ 
+}
+
+.Menunav li a{
+  /*se fijan los efectos css a la lista de elementos <li> del menu, a las opciones del menu   */
+  text-decoration: none; /* Quitamos cualqier efecto que tengan las palabras de nuestro menu, subrayado,etc */
+  background-color: #e5e8e8  ; /* color de fondo del menu */
+  color:  #ffffff ;  /* color de las letras del menu */
+  padding:13px 59px; /* define los espacios del rectangulo que forman el menuvar, el primero el alto y el segundo el ancho  */
+  display: block;  /* define un bloque donde encierra al menu principal,  */  
+}
+
+
+/* Definición técnica :El efecto hover es la alteración del aspecto de un componente de la interfaz gráfica
+ una vez que se posa el ratón sobre él, aunque no haya sido seleccionado. */
+ 
+.Menunav li a:hover{   /*hover se utiliza para seleccionar y dar estilo al pasar con el ratón 
+                         por encima de un elemento, y se utiliza normalmente para enlaces */
+  background-color:  #0090d3 ; /* define el color de fondo cuando se pasa el mouse sobre las opciones del menu */
+  transition: 0.5s; /* definimos una transición de 0.5 segundos para que cambie de color, no sea inmediato */
+}
+
+
+.Menunav > li {
+/* La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, 
+permitiendo a los elementos de texto y en línea aparecer a su costado. */
+float: left; /* permite sobreponer de manera flotante el menu, left o rigth invierten el orden de las opciones */
+}
+
+.Menunav li ul{  /*define las posiciones de los submenus en la pantalla del navegador */
+  display:none; /* controla la visibilidad del elemento, que sea visible o no, pero no afecta al navegador.  */
+  position: absolute; /* permite que los elementos de la pagina no se muevan, tomen una posición fija. */ 
+  list-style: none; /* sacamos los puntos o cualquier otro estilo de las fuentes del menu */
+}
+
+.Menunav li:hover > ul{
+ /*activa los submenu para que cuando el cursor se desplaza sobre la lista de menus y cambia de color 
+   la opcione del submenu la define y entiende como un bloque de acciones*/
+  display: block; 
+}

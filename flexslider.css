@@ -1,0 +1,107 @@
+
+/*  Archivo : flexslider.css */
+/* El Asterisco indica qu referencia a toda nuestra oagina,body */
+*{
+	/* quitamos cualquier margen o padding al iniciar nuestro codigo  */
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider{
+	width: 60%; /* define usar el 60% de la pantalla ,se regula el tamaño de la pantalla.  */
+	position:relative; /* la posicion se adapta a la pantalla de despliegue   */
+}
+
+.slides{
+	overflow: hidden;  /* esto permite ocultar  cualquier sobre posición de elementos 
+	                   en el diseño, en este caso se refiere a los puntos de navegacion
+					   de las fotos,si se saca los puntos quedan en la parte superior  */
+}
+
+.slides img{
+	width: 100%; /* permite controlar o reducir el tamaño de la foto
+	                 que se mostrara,achicar o agrandar
+					 le decimos que ocupe el 100% desu tamaño pero adentro
+					 del 60% del tamaño de la celda que definimos arriba  */
+}
+
+
+/*La propiedad CSS flex-direction especifica cómo colocar los objetos flexibles
+en el contenedor flexible definiendo el eje principal y la dirección   */
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;  /*quitamos cualquier estilo de puntos de lista   */
+ 
+}
+
+.flex-control-nav{
+	width: 100%;
+	text-align: center;  /* centramos los textos,si hubiese, en este caso centramos
+	                        los tres puntos de navegación   */	
+	bottom: 5%; /*  definimos la altura de los 3 puntos de navegacion en la parte inferior */
+}
+
+.flex-control-nav li{
+	display: inline-block;  /* permite colocar en un bloque los 3 puntos de manera
+	         horizontal quitando el numero del elemento asociado  */
+	margin: 0 6px;
+}
+
+/*con flex-control definimos los colores de los 3 puntitos   */
+.flex-control-nav li a{  /* definimos las caracteristicas de nuestros li de navegacion */
+	display: block;  /* define los numeros 1,2,3 de las fotos en un block con puntos tipo circulos */
+	background: #2a025e; /*Define color azul a los botonesde navegación (son 2)    */
+	width: 12px; /*Width,height y border permiten cambiar el tamaño de los botones
+	                por ejemplo aumentar los 3 a 15.     */
+	height: 12px;
+	border-radius: 12px;
+	text-indent: -9999px;  /* pemite quitar en numero de orden que tiene los botones
+	                         quedando solo el circulo  */
+}
+
+.flex-control-nav li a:hover{
+	background: #ccee36;  /* colocamos un color al pasar el mouse sobre el boton  */
+}
+
+.flex-control-nav li a.flex-active{
+	background: #aa0404;	/* define el color del botón de la imagen que se esta
+	                         mostrando */
+}
+
+.flex-direction-nav a{
+	/* Aqui definimos los parametos de transición */
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	z-index: 999;
+	width: 0px;  
+	height: 40px;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.flexslider:hover .flex-direction-nav .flex-prev{
+	opacity: 0.7;  /*La propiedad CSS opacity define la transparencia de un elemento,
+	                esto es, en qué grado se superpone el fondo al elemento.
+					El valor debeestar entre 0 y 1 */	
+}
+
+
+.flexslider:hover .flex-direction-nav .flex-next{
+	opacity: 0.7;
+	
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover{
+	opacity: 1;
+}

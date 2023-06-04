@@ -1,0 +1,37 @@
+<!--EJEMPLO 10 TABLA CSS -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Definimos un tipo de escala para dispositivos,permite responive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria</title>
+        <link rel="stylesheet" href="DEMOGALERIA.CSS">
+    </head>
+    <body>            
+        <!--container es un nombre propio de javascrip-->
+        <div class="container"> 
+            <!--ideal 4 fotos-->
+            <!--Para declarar propiedades personalizadas (variables) usamos un
+            nombre que comienze con dos guiones (--), y un valor que puede ser
+            cualquier valor válido de CSS. Como cualquier otra propiedad, la 
+            escribimos dentro de un set de reglas de estilo, algo así:
+            elemento { --main -bg-color: brown;},a Main le definimos un color
+
+            Aqui creamos las variables dentro de lasentencia style
+            se crean con gion  --i, variable i:0 y le asignamos el valor 0
+            tmabien creamos la variable --img y le pasamos las imagenes.
+            Lo ideal que las imagenes tengan el mismo tamaño
+            En cada style se va usar ese valor solo para el, esdecir en 
+            i:0 ese valor 0--
+             -->
+
+            <div class="img" style="--i:0; --img:url(Fotos/silla1.png)"></div>
+            <div class="img" style="--i:1; --img:url(Fotos/silla2.png)"></div>
+            <div class="img" style="--i:2; --img:url(Fotos/silla3.png)"></div>
+            <div class="img" style="--i:3; --img:url(Fotos/silla4.png)"></div>
+        </div>        
+    </body>
+</html>

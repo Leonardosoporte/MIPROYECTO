@@ -1,0 +1,28 @@
+/* ARCHIVO: SOMOS.CSS QUE TRABAJA CON   SOMOS.HTML     */
+#tabla2{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #aebfb8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+
+}
+
+
+
+#tabla5{
+    width: 80%;
+    margin-left: 10%;
+    background: #d5d8dc;
+    border-radius: 1em;
+    text-align: center;
+    border:none
+  }
+  
+  h5{
+    color:red;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: center;
+  }

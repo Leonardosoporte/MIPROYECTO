@@ -1,0 +1,281 @@
+
+/*Aqui colocamos una imgen de fondo
+Otro link para buscar fondos
+https://www.freepik.es/fotos-vectores-gratis/fondos-para-paginas-web
+
+*/
+
+/**/
+body{
+  margin:0;
+  /* Efecto 1:    background-image: url(Imagenes/Fondooriental.png); */
+
+  /*Efecto 2: sacado de la pagina https://www.svgbackgrounds.com
+  https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/
+  Presionar boton  EXPORT Y DESPUES COPY PASTE EN CSS
+       
+  background-color: #330033;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='613' height='613' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1.4'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
+  */
+
+
+/*Efecto 3 */
+/*
+background-color: #330055;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%2335005a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23360060' cx='50' cy='100' r='50'/%3E%3Cg fill='%23380065' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2339006b' cx='50' cy='200' r='50'/%3E%3Cg fill='%233a0071' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b0077' cx='50' cy='300' r='50'/%3E%3Cg fill='%233c007d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%233c0083' cx='50' cy='400' r='50'/%3E%3Cg fill='%233c0089' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%233c008f' cx='50' cy='500' r='50'/%3E%3Cg fill='%233c0095' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%233b009c' cx='50' cy='600' r='50'/%3E%3Cg fill='%233a01a2' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%233902a9' cx='50' cy='700' r='50'/%3E%3Cg fill='%233704af' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%233406b6' cx='50' cy='800' r='50'/%3E%3Cg fill='%233108bd' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%232d0bc4' cx='50' cy='900' r='50'/%3E%3Cg fill='%23270ecb' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%231F11D2' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;   
+*/
+
+}
+
+
+
+
+
+
+#tabla1{   /* llamamos a la tabla1 y definimos sus estilos CSS,donde tenemos nuestros logos oferta,new,etc. */
+    width: 100%;   /* definimos el ancho al 100% de la pantalla. */    
+    text-align: center;          
+}
+
+ /*  MENU VAR ---------------------------------------------------------------------------*/    
+
+   .Nav{  /*usamosel punto . para llamar a la clase */
+  margin-left: 20px; /* define un margen izquierdo al menu en pixel (20 pixel). */   
+  margin-right: 20px;
+  background:  #d6dbdf  ;     /* define color de fondo del menu nav */
+  /*   border-radius: 1em;*/
+}   
+
+.Menunav{
+  list-style: none; /* Quitamos cualquier estilo que tengan las fuentes, en este caso los punto . de la lista */
+  padding: 0;  /* Quita cualquier espacio o relleno entre el elemento y su borde 
+                  puedes visitar este link para una explicación tecnica https://developer.mozilla.org/es/docs/Web/CSS/padding */
+  width: 100%;  /* definimos un ancho del 100% */
+  
+  height: 50px;  /* definidos el alto de la tabla del menu */
+  margin-left:10;  /* margen left px aqui se cambia el margen inzquierdo para correr el menu */
+  margin-top:0 ;  /* Define un margen arriba */
+  font-family: Arial; /* define el tipo de fuente, letras del menu */
+  font-size: 20;      /* define el tamaño de la fuente, letras del menu  */
+  color: #FFFFFF;          /* define color de la fuente, letras del menu  */ 
+}
+
+.Menunav li a{
+  /*se fijan los efectos css a la lista de elementos <li> del menu, a las opciones del menu   */
+  text-decoration: none; /* Quitamos cualqier efecto que tengan las palabras de nuestro menu, subrayado,etc */
+  background-color: #d6dbdf   ; /* color de fondo del menu */
+  color:  #ffffff ;  /* color de las letras del menu */
+  padding:13px 59px; /* define los espacios del rectangulo que forman el menuvar, el primero el alto y el segundo el ancho  */
+  display: block;  /* define un bloque donde encierra al menu principal,  */  
+}
+
+
+/* Definición técnica :El efecto hover es la alteración del aspecto de un componente de la interfaz gráfica
+ una vez que se posa el ratón sobre él, aunque no haya sido seleccionado. */
+ 
+.Menunav li a:hover{   /*hover se utiliza para seleccionar y dar estilo al pasar con el ratón 
+                         por encima de un elemento, y se utiliza normalmente para enlaces */
+  background-color:  #0090d3 ; /* define el color de fondo cuando se pasa el mouse sobre las opciones del menu */
+  transition: 0.5s; /* definimos una transición de 0.5 segundos para que cambie de color, no sea inmediato */
+}
+
+
+.Menunav > li {
+/* La propiedad CSS float ubica un elemento al lado izquierdo o derecho de su contenedor, 
+permitiendo a los elementos de texto y en línea aparecer a su costado. */
+float: left; /* permite sobreponer de manera flotante el menu, left o rigth invierten el orden de las opciones */
+}
+
+.Menunav li ul{  /*define las posiciones de los submenus en la pantalla del navegador */
+  display:none; /* controla la visibilidad del elemento, que sea visible o no, pero no afecta al navegador.  */
+  position: absolute; /* permite que los elementos de la pagina no se muevan, tomen una posición fija. */ 
+  list-style: none; /* sacamos los puntos o cualquier otro estilo de las fuentes del menu */
+}
+
+.Menunav li:hover > ul{
+ /*activa los submenu para que cuando el cursor se desplaza sobre la lista de menus y cambia de color 
+   la opcione del submenu la define y entiende como un bloque de acciones*/
+  display: block; 
+}
+
+
+/* Aplicamos estilos a la tabla productos  */
+#productos{
+  width: 100%;
+  height: 50px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+
+
+  
+}
+
+.boton1{
+  text-decoration: none;
+  font-weight: 600;  /*especifica el grueso de la fuente    */
+  font-size: 20px;
+  background-color: #a9f058;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: #fa0512; /*Define un borde alrededor del rectangulo    */
+  border-width: 3px;  /*Defino el ancho del borde    */
+  border-style: solid;
+}
+.boton1:hover{
+  background-color: #000000;
+}
+
+
+
+.boton2{
+  text-decoration: none;
+  font-weight: 600;  /*especifica el grueso de la fuente    */
+  font-size: 20px;
+  background-color: #ffd27d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-color: #d8d8d8;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 35px;  /*Definimos un angulo redondo al borde del boton   */
+}
+.boton2:hover{
+  background-color: #24f540;
+}
+
+.boton3{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20;
+  background-color: #005bbb;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#descargas{
+  width: 90%;
+  height: 50px;
+  border-collapse: collapse;
+  font-family: arial;
+  color: #e9121d;
+  text-align: right;
+
+}
+
+
+#tabla5{
+  width: 80%;
+  margin-left: 10%;
+  background: #d5d8dc;
+  border-radius: 1em;
+  text-align: center;
+  border:none
+}
+
+h5{
+  color:red;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ######################################################################    */
+
+/* Configuramos estilos CSS para nuestro Whatssap   */
+
+a{
+  text-decoration: none;
+}
+
+#whatsapp {
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+}
+
+svg {  /*Definimos el estilo del boton de whatsapp  */
+	width: 80px;
+	display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+}
+
+circle {
+  fill: #25d366;
+}
+
+path {
+	fill:  #fff;
+}
+
+#whatsapp a {padding: 20px 0;}
+
+#whatsapp a::before {
+  /*content: es lo que mostramos al colocar el mouse sobre el icono   */
+	content: 'Hola !, Te puedo atenter por whatsapp';
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px 10px;
+	margin-right: 10px;
+	color: rgba(0, 0, 0, .8);
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+	transition: .3s ease;
+	opacity: 0;
+}
+#whatsapp:hover a::before {opacity: 1;}
+
+
+/* CONFIGURAMOS ESTILOS PARA LA PAGINACION DE NNUMEROS  */
+
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	background:#024959;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#037E8C;
+}
+
+.paginacion ul li .active {
+	background:#037E8C;
+	font-weight:bold;
+}

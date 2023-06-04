@@ -1,0 +1,79 @@
+<doctype html!>
+<html lang="es">
+<!-- ARCHIVO  :   Formulario3.html-->
+<html>
+    <Head>
+        <Title>Formulario 3 CSS</Title>  
+        <meta charset="utf-8"/>
+          
+        <link rel="stylesheet" type="text/css" href="DEMOFORMULARIO2.CSS">
+      
+    </Head>
+
+    <Body>
+        <!--            
+        ATRIBUTO ACTION : El atributo “action” indica el tipo de acción que va a realizar el formulario.
+
+        <form action=mailto:direcciondelcorreo@correo.com…></form>.
+
+        EXISTEN BASICAMENTE DOS METODOS PARA EL ENVIO DE INFORMACION: METHOD GET Y EL POST
+        Si no se coloca ninguno en navegador por defecto asume metodo GET. Siendo el POST el más usado.
+
+        Con el método GET, los datos que se envían al servidor se escriben en la misma dirección URL.
+    
+        La mayor desventaja del método GET es su débil protección de los datos. 
+        Los parámetros URL que se envían quedan visibles en la barra de direcciones del navegador
+        y son accesibles sin clave en el historial de navegación.
+
+        El método POST introduce los parámetros en la solicitud HTTP para el servidor. Por ello,
+        no quedan visibles para el usuario.        
+        -->
+        <!-- Por ejemplo en este sitio https://formspree.io/  puedes crear una
+        cuenta de reenvio de correo a traves de una api.
+        Te registras. Una vez creado te envian un correo de confirmación, lo confirmas
+        para validarlo. Y luego puedes generar el codigo para tu formulario.
+        La versión basica soporta 50 correos por mes-->
+
+
+        <!-- web mail que administra tu empresa de hosting o google-->
+        <form action="Aqui pegar MAIL TO..." method="POST">
+                      
+           <p> <label for="nombre"> Nombre y Apellido:</label>   </p>              
+           <input type="text" id="nombre" name="nombre"    placeholder ="Escribe Nombre y Apellidos" required> 
+                         
+           <p> <label for="celular"> Celular de Contacto:</label>  </p>            
+           <input type="text" id="celular" name="celular"    placeholder ="Contacto..." required>
+           
+           <p> <label for="mail"> Mail:</label></p>
+           <input type="email"  id="mail" name="mail" placeholder="Escribe tu mail" required>
+                     
+           <p>Selecciona Items</p>
+           <select name="Items" id="Items">              
+                <option value="Items1">Selecciona Items</option>
+                <option value="Consulta">Consulta</option>
+                <option value="Sugerencia">Sugerencia</option>
+                <option value="Reclamo">Reclamo</option>
+                <option value="Otros">Otros</option>                
+           </select>   
+          
+           <br>
+           <br>
+
+           <!--Textarea :  permite edición mutilínea de texto sin formato.-->
+           <p><label for="mensaje"> Mensaje:</label></p>
+           <textarea  id="mensaje" name="mensaje" placeholder="Escribe tu Mensaje"></textarea>
+     
+            <input type="submit" value="Enviar"
+            <br>
+            <br>
+            <br>
+            <input type="reset" value="Borrar datos">
+            <br>
+        
+        </form>
+
+    </Body>
+
+</html>
+
+        

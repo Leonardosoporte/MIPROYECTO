@@ -1,0 +1,241 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+}
+
+span{
+	position: relative;
+}
+
+
+/*Referenciamos el elemento a (ancho) como hijo de p(parrafo)   */
+p a{ /* #184DA8 */
+	color: #184DA8; /*Aqui cambiamos el color del texto del elento a en el html
+	       dondedice ... <a href="#">Twitter</a> o <a href="#">Facebook</a>,.......  */
+	text-decoration: none;
+}
+p a:hover{ 
+
+	text-decoration: underline; /*Al pasar el mouse sobre las palabras Twitter,
+	Facebook,Canal de Youtube coloca un subrayado   */
+}
+
+.center-align{
+	/*Alinea los textos de la parte superior e inferior   */
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.black{color: black;} /*Define color de texto negro para  la classe=black */
+.white{color: white;} /*Define color de texto blanco para la classe=white */
+
+
+.section-columns > div{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%; /*Definimos una partición fisica en la pantalla para
+	             la clase  .section-columns   */
+}
+
+/* ---------------------------------------------------------*/
+.section-columns h2{
+	font-size: 72px; /*Tamaño de fuente para todos los elementos h2   */
+}
+
+#intro-container .section-columns h2{
+	padding-top: 120px; /*Permite subir o bajar los titus h2 */
+	padding-bottom: 30px;/*Es el espacio definido en el titulo h2 y el boton
+	                 que esta abajo, si lo aumentamos bajamos mas el boton
+					 por ej. colocar 60px   */
+}
+
+/* ---------------------------------------------------------*/
+/*Repetimos los estilos para todo elemento h3   */
+.section-columns h3{
+	font-size: 26px;
+	font-weight: lighter;
+	line-height: 40px;
+}
+.section-columns p{
+	font-weight: lighter;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+
+/* ---------------------------------------------------------*/
+.section-columns #image-bg{
+	/*Aqui colocamos la foto o imagen de la persona, logo u otros.  */
+	background-image: url('imagenes/FotoOficina1.jpg');
+
+	/*Utilizando la propiedad background-repeat es posible controlar 
+	si la imagen de fondo se repite o no y la forma en la que se repite.
+	El valor repeat coincide con el comportamiento por defecto del
+	navegador y repite la imagen en todas las direcciones.   */
+	background-repeat:no-repeat; /* Se puede omitir   */
+	
+	
+	background-size: 750px; /*Controlamos el tamaño de la foto
+	                         por ej. cambiar a 550px y ver    */
+
+    /*La propiedad background-position controla la posición en la que
+	se muestra la imagen de fondo de un elemento. Al cambiar los paramtros
+	nos permite alinear la foto a la izquier o derecha
+	por ej. -140px si colocamos -100 movemos la imagen a la derecha
+	        -40 si colocamos -60px subimos la foto   */
+   
+	background-position: -140px -40px ;
+	height: 600px;
+}
+
+.section-columns #biografia{
+	height: 600px;
+}
+
+#work01, #work02, #work03, #work04{
+	background-repeat: no-repeat;
+	background-size: 750px;
+	background-position: right center;
+	height: 600px;
+	padding-top: 150px;
+	margin-top: -50px;	
+}
+
+#footer{
+	margin-top: -50px;
+	padding-top: 50px;
+	height: 550px;
+
+   
+	background-color: #330033; /*Podemos quitar eesto background
+	                              y ver como cambia el fondo lila   */
+	
+
+	/*Fondo lila descargado el link   */
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='613' height='613' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1.4'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
+    /*	background-image: url('../img/Fondo1.jpg');  */
+	background-size: 50%;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+#footer h3{color: white; padding-top: 70px; margin: 0;}
+#footer p {color: gray; padding-bottom: 30px;}
+
+.rectangle{  /*Definimos el rectangulo en diagonal del segmento 1 gris
+	           no modificar para no desvirtual la imagen de los cortes   */
+	height: 100px;
+	margin-top: -50px;
+}
+.bg-white{
+	background-color: white; /*Definimos todo el segmento 2 de color blanco   */
+}
+.bg-gray{
+	
+	    background-color:   #03063b  ; /*Definimos todo el segmento 3 de color gris   */
+
+
+}
+.bg-black{
+	background-color:  #2c0242  ; /*Definimos todo el segmento 4 de color gris
+									ES la linea horizontal diagonal tono lila   */
+}
+
+
+
+.skew-left{
+	transform: skewY(-4deg);
+}
+.skew-right{
+	transform: skewY(4deg);
+}
+
+.btn{
+	border: solid 2px; /*Definos el borte para los botones  clase .btn   */
+	padding: 20px 40px;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+
+/*Definimos el efecto para la clase class="btn btn-black">Ver proyectos sobresalientes</a>
+Este efecto es para el boton definido en id="about-section",sección acerca de...      */
+.btn-black{
+	border-color: rgb(175, 48, 48); /*Definimos el color del borde   */
+	color: black; /*Definimos el color de la fuente dentro del boton..>Ver proyectos sobresalientes   */
+}
+
+/*Efecto Hover cuando pasamos el mouse sobre el boton*/
+.btn-black:hover{
+	background-color: black;
+	border-color: white;
+	color: white;
+}
+/*----------------------------------------    */
+
+
+/*Definimos el efecto para la clase class="btn btn-white">  */
+.btn-white{
+	border-color: white;
+	color: white;
+}
+
+.btn-white:hover{
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+/*----------------------------------------    */
+
+
+
+
+#intro-container{
+    /*Definimos el color de fondo para el segmento 1 de arriba, gris   */	
+	background-color:   #c7c7c8    ;
+
+	padding-top: 100px;
+}
+
+#intro-container nav{
+	margin: 0;
+	padding: 0;
+}
+
+#intro-container nav div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#intro-container nav #logo{
+	width: 9%;
+
+}
+
+#intro-container nav #menu-lista{
+	width: 89%;
+	text-align: right;
+}
+#intro-container nav #menu-lista ul{
+	margin: 0;
+	padding: 0;
+}
+#intro-container nav #menu-lista ul li{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+#intro-container nav #menu-lista ul li a{
+	font-size: 25px;
+	color: #1cb11e; /*Aplicamos color a las fuentes <li> arriba Acerca 
+	                  de..Proyectos Contacto Innovación  */
+	text-decoration: none;
+}
+
+/*Aplicamos efecto hover al pasar el mouse sobre las letras en el <li>   */
+#intro-container nav #menu-lista ul li a:hover{
+	color: white;
+	text-decoration: white;
+}

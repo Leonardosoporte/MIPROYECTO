@@ -1,0 +1,137 @@
+@font-face {   /*@font-face permite al autor especificar fuentes online para visualizar en sus páginas web.
+				estan fuentes han sido bajadas y estan en la carpeta /Fonts, con extensión  .TTF y WOFF  */
+  font-family: 'flexslider-icon';
+  src: url('fonts/flexslider-icon.eot');
+  src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') 
+  format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	/* quitamos cualquier margen o padding al iniciar nuestro codigo  */
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider{
+	width: 100%; /* define usar el 100% de la pantalla   */
+	position:relative; /* la posicion se adapta a la pntalla de despliegue   */
+}
+
+.slides{
+	overflow: hidden;  /* dibujar barras de desplazamiento o mostrar el contenido, esto permite oculpar
+	                     cualquier sobre posición de elementos en el diseño, en este caso se refiere
+	                      a las flechas de dirección   */
+}
+
+.slides img{
+	width: 100%; /* permite controlar o reducir el tamaño de la foto que se mostrara  */
+}
+
+.slides,  /* nos permite  controlar el movimiento de las imagenes tipo navegación
+            quitando cualquier espacion y estilos de listas al Nav.  */
+.flex-control-nav,  
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-control-nav{
+	width: 100%;
+	text-align: center;  /* centramos los textos   */
+	position: absolute;
+	bottom: 5%; /*  definimos la altura de los 3 puntos de navegacion en la parte */
+	z-index: 999; /* El valor predeterminado de z-index es auto. El navegador irá ordenando los elementos 
+	                 en el orden en el que aparezcan, el primero quedará abajo y los siguientes elementos
+					 se irán apilando encima.  En este caso indica los 3 puntos de navegación */
+}
+
+.flex-control-nav li{
+	display: inline-block;  /* permite colocar en un bloque los 3 puntos de manera horizontal  */
+	margin: 0 6px;
+}
+
+.flex-control-nav li a{  /* definimos las caracteristicas de nuestros li de navegacion */
+	display: block;  /* define los numeros 1,2,3 de las fotos en un blo con puntos tipo circulos */
+	background: #777777;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	text-indent: -9999px;  /* desaparecen los numeros quedando solo el circulo  */
+}
+
+.flex-control-nav li a:hover{
+	background: #ccee36;  /* colocamos un color al pasar el mouse sobre los puntos  */
+}
+
+.flex-control-nav li a.flex-active{
+	background: #2E2E2E;	/* define un color al boton activo que esta selecionado  */
+}
+
+.flex-direction-nav a{
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav .flex-prev{
+	left: 0;
+}
+
+.flex-direction-nav .flex-next{
+	right: 0;
+}
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+
+.flex-caption p{
+	font-family: Lato;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	font-size: 45px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev{
+	opacity: 0.7;
+	left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover{
+	opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next{
+	opacity: 0.7;
+	right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover{
+	opacity: 1;
+}

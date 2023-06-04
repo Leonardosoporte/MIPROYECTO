@@ -1,0 +1,167 @@
+/* PRODUCTO4.css
+
+Ejemplo Tabla 1 *,  con el simbolo gato # llamamos a la tabla a usar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+   
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 50px;
+   
+    
+}
+
+
+#home{   
+    width: 100%;   
+    text-align: center;   
+    /*   text-align: center;   */
+    
+  }
+
+
+
+  
+
+#tabla1{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 1em;
+    text-align: center;
+    border: none;
+}
+
+#tabla1 img{
+    margin-left: 60%; /*Pemite correr la imagen logo !Nuevo Producto   */
+}
+
+#contenedor1{  /*aqui referenciamos a nuestra etiqueta DIV contenedor1    */
+
+    /*forma 1, definimos los margenes para centrr nuestra tabla   */ 
+    margin-top: 140px;
+    margin-left: 800px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+   
+    /* forma 2 otra forma de definir mis 4 margenes 
+    la instruccion margin sola define 140 pixel para todos los margenes  */
+    /*  margin:650px;   */
+    display:inline;
+  
+}
+
+
+li{
+    margin-left: 60%; 
+    color: hsl(23, 91%, 35%);
+    font-family: Arial;
+    font-size: 20;  
+    text-align: left; 
+}
+
+
+
+
+h2
+{   /* usado en tabla 1 */
+    margin-left: 60%; 
+    color: #11b962;
+    font-family: Arial;
+    font-size: 20;       
+    text-align:left;  
+}
+
+
+
+
+.img1 {
+    position:absolute; 
+    top:20px; 
+    left:0px; 
+    border:0px; 
+
+    /*la propiedad overflow. hidden: esta opción genera el efecto contrario
+    a la opción visible. Es decir, con esta opción hacemos que todo el contenido
+    que sobresale de su contenedor se oculte.   */
+    overflow:hidden; 
+    
+    display:block;
+}
+.img2 {
+    position:absolute; 
+    top:20px; 
+    left:0px;
+    border:0px; 
+    overflow:hidden; 
+    display:none; 
+
+    /*La propiedad de CSS clip define qué porción de un elemento es visible.
+    La propiedad clip se aplica solamente sobre elementos con position:
+    absolute o position:fixed.   */
+    clip: rect(0px, 100px, 100px, 0px);
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------*/
+ 
+#tabla2  /*Definimos el mismo tamaño de tabla1     */
+{   /* llamamos a la tabla1 y definimos sus estilos CSS */
+    background-color: #FAFAFA;
+    width: 80%;  
+    margin-top: 1%; /* Nos define el margen entre la tabla de arriba entremargen superior
+                       y el margen top donde e inicia la tabla   */
+    margin-left: 10%;           
+    text-align: center;  /* Centramos el logo nuevo Producto(rojo)  */
+    border:none;     
+}
+
+h4
+{         /* usado en tabla 4,corresponde al titulo Descricpion */
+     /*    background-color: azure;  */
+    color:rgb(242, 33, 33);
+    font-family: Arial;
+    font-size: 25;       
+    text-align: left;  
+}
+
+p
+{   /* usado en tabla 2, el texto de la Descripción */
+    color:black;
+    font-family: Arial;
+    font-size:20px;       
+    text-align: left;  
+}
+
+
+#tabla3
+{   
+    width: 80%;   
+    margin-left: 10%;    
+    background:  #d5d8dc;
+   
+    border-radius: 1em;  /* coloca un borde redondo en la terminación de los angulos  */
+    text-align: center;  
+    border:none       
+}
+
+h5
+{
+    color:red;
+    font-family: Arial;
+    font-size: 12;       
+    text-align:center;  
+}
+
+
+/* ----------------------------------------------------------------------------*/
